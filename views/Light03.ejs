@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset='utf-8'>
+   <title>Liang-Link</title>
+   <link rel="stylesheet" type="text/css" href="/css/reset.css" >
+   <link rel="stylesheet" type="text/css" href="/css/style.css">
+   <style>
+      body
+	  {
+	     background-color: #E0CCFF;
+		 margin: 0px;
+		 padding: 0px;
+		 font-size: 14px;
+	  }
+	  div
+	  {
+	     display: block;
+	  }
+	  ul
+	  {
+	     margin: 0;
+		 padding: 0;
+		 display: block;
+		 list-style-type: none;
+		 -webkit-margin-before: 1em;
+		 -webkit-margin-after: 1em;
+		 -webkit-margin-start: 0px;
+		 -webkit-margin-end: 0px;
+		 -webkit-padding-start: 40px;
+	  }
+	  embed
+	  {
+	     width: 100;
+		 height: 100;
+		 allownetworking: internal;
+		 allowscriptaccess: never;
+		 quality: high;
+		 background-color: #FFFFFF;
+		 wmode: transparent;
+		 allowfullscreen: true;
+	  }
+	  #top
+	  {
+	     padding: 0px;
+		 border-bottom-width: 1px;
+		 border-bottom-style: solid;
+		 border-bottom-color: rgb(230,231,225);
+		 background-color: #8A8AE6;
+		 min-width: 960px;
+		 line-height: 28px;
+	  }
+	  .cl
+	  {
+	     zoom: 1;
+	     
+	  }
+
+      .section 
+      {
+  		 margin-left: 200px;
+	  }
+
+	  .cl::after
+	  {
+	     content: ".";
+		 display: block;
+		 height: 0px;
+		 clear: both;
+		 visibility: hidden;
+	  }
+	  .z
+	  {
+	     float: left;
+	  }
+	  a
+	  {
+	     color: #5200CC;
+	  }
+	  <!-- A{text-decoration:none} --> 
+	
+	  #mid
+	  {
+	     margin-top: 30px;
+		 width: 950px;
+		 height: 130px;
+		 border-top-color: rgb(211, 223, 223);
+		 border-top-style: solid;
+		 border-top-width: 1px;
+		 border-right-color: rgb(211, 223, 223);
+		 border-right-style: solid;
+		 border-right-width: 1px;
+		 border-bottom-color: rgb(211, 223, 223);
+		 border-bottom-style: solid;
+		 border-bottom-width: 1px;
+		 border-left-color: rgb(211, 223, 223);
+		 border-left-style: solid;
+		 border-left-width: 1px;
+		 background-image: url(/images/pur.jpg);
+		 background-position-x: 100%;
+		 background-position-y: 0%;
+		 background-size: initial;
+		 background-repeat: no-repeat;
+		 background-attachment: initial;
+		 background-origin: initial;
+		 background-clip: initial;
+		 background-color: rgb(250, 250, 250);
+		 color: #004700;
+		 position: relative;
+	  }
+	  #mid h2
+	  {
+	     padding-top: 20px;
+		 padding-right: 0px;
+		 padding-bottom: 0px;
+		 padding-left: 30px;
+		 line-height: 30%;
+		 font-size: 25px;
+		 float: left;
+	  }
+	  #mid h2 strong
+	  {
+	     display: block;
+	  }
+	  #mid h2 span
+	  {
+	     display: block;
+	  }
+	  #nv li
+	  {
+	     font-size: 20px;
+		 margin-right: 1px;
+		 padding-top: 0px;
+		 padding-right: 16px;
+		 padding-bottom: 0px;
+		 padding-left: 16px;
+		 height: 30px;
+		 line-height: 30px;
+		 float: left;
+		 font-weight: 700;
+		 list-style: none;
+	  }
+	  #down .frame
+	  {
+	     padding-top: 15px;
+	  }
+	  #p1 li
+	  {
+	     clear: both;
+	     padding: 3px 0 3px 90px;
+	  }
+	  #p1 li em
+	  {
+	     float: left;
+		 margin-left: -90px;
+		 width: 85px;
+		 overflow: hidden;
+		 font-style: normal;
+	  }
+	  .mbn
+	  {
+	     margin-bottom: 5px;
+	  }
+	  .wp
+	  {
+	     width: 970px;
+		 margin-top: 0px;
+		 margin-right: auto;
+		 margin-bottom: 0px;
+		 margin-left: auto;
+		 overflow: hidden;
+	  }
+	  .fw
+	  {
+	     font-weight: 400;
+	  }
+	  .fs
+	  {
+	     font-family: Arial;
+	     font-size: 0.83em;
+	  }
+	  .fs1
+	  {
+	     font-size: 12px;
+	  }
+	  .mt
+	  {
+	     margin-top: 5px;
+	  }
+	  #nv
+	  {
+	     bottom: 10px;
+		 position: absolute;
+		 left: 10px;
+		 height: auto;
+		 overflow: hidden;
+	  }
+	  .wp
+	  {
+	     width: 970px;
+		 margin-top: 0px;
+		 margin-right: auto;
+		 margin-bottom: 0px;
+		 margin-left: auto;
+		 overflow: hidden;
+	  }
+	  .area
+	  {
+	     padding-top: 0px;
+		 padding-right: 5px;
+		 padding-bottom: 0px;
+		 padding- left: 5px;
+	  }
+	  .column
+	  {
+	     overflow: column;
+	  }
+	  .block
+	  {
+	     margin-top: 0px;
+		 margin-right: 5px;
+		 margin-bottom: 10px;
+		 margin-left: 5px;
+		 border-top-color: rgb(221, 221, 221);
+		 border-top-style: solid;
+		 border-top-width: 1px;
+		 border-right-color: rgb(221, 221, 221);
+		 border-right-style: solid;
+		 border-right-width: 1px;
+		 border-bottom-color: rgb(221, 221, 221);
+		 border-bottom-style: solid;
+		 border-bottom-width: 1px;
+		 border-left-color: rgb(221, 221, 221);
+		 border-left-style: solid;
+		 border-left-width: 1px;
+		 background-color: #FFF;
+	  }
+	  .title
+	  {
+	     border-bottom-width: 1px;
+		 border-bottom-style: solid;
+		 border-bottom-color: #8585FF;
+		 background-color: #8585FF;
+		 padding-top: 0px;
+		 padding-right: 10px;
+		 padding-bottom: 0px;
+		 padding-left: 10px;
+		 font-size: 14px;
+		 font-weight: 700;
+		 line-height: 35px;
+		 height: 30px;
+		 overflow: hidden;
+	  }
+	  .db_pd
+	  {
+	     padding-top: 5px;
+		 padding-right: 10px;
+		 padding-bottom: 10px;
+		 padding-left: 10px;
+	  }
+	  .ta
+	  {
+	     text-align: center;
+	  }
+      .section 
+      {
+  		 margin-left: 280px;
+  		 overflow: auto;
+	  }
+
+      .section2
+      {
+  		 margin-left: 320px;
+  		 overflow: auto;
+	  }
+
+   </style>
+</head>
+<body>
+   <div id="top" class="cl">
+      
+      <div class="z">
+         <a href="https://www.facebook.com/profile.php?id=100000328042295" style="padding-left:4px;padding-right:4px" title="facebook">facebook</a>
+	     <a href="https://www.google.com/calendar/" style="padding-left:4px;padding-right:4px" title="Google日曆">日曆</a>
+		 <a href="https://translate.google.com.tw/" style="padding-left:4px;padding-right:4px" title="Google翻譯">翻譯</a>
+		 <a href="https://www.youtube.com/" style="padding-left:4px;padding-right:4px">Youtube</a>
+		 <a href="https://www.google.com.tw/maps/" style="padding-left:4px;padding-right:4px" title="Google地圖">地圖</a>
+		 <a href="https://www.google.com.tw/" style="padding-left:4px;padding-right:4px" title="Google首頁">google</a>
+	  </div>
+   
+   </div>
+   
+   <div id="mid" class="wp cl">
+      <h2 id="spaceinfoshow">
+	     <strong id="spacename" class="mbn">讚讚站</strong>
+		 <span class="fw fs">
+		    <p>Welcome</p>
+		 </span>
+		 <span id="spacedescription" class="fs1	 mt fw"></span>
+	  </h2>
+	  <div id="nv">
+	     <ul>
+		    <li>
+			   <a href="/">首頁</a>
+			</li>
+			<li>
+			   <a href="/Light02">相簿</a>
+			</li>
+			<li>
+			   <a href="">好站連結</a>
+			</li>
+			<li>
+			   <a href="/Light04">聊天室</a>
+			</li>
+         </ul>
+	  </div>
+   </div>
+   
+   <div id="down" class="wp cl">
+      <div id="diypage" class="area">
+	     <div id="frame1" class="frame cl">
+		    
+			<div id="frame1">
+			   
+			   <div id="share1" class="block">
+                  
+                  <div class="title">
+                     <span>
+                        <a>好站連結-陳鍾誠的教科書</a>
+                     </span>
+                  </div>
+                  
+                  <div id="share-content" class="db_pd">
+                     <ul class="cl">
+                        <li>
+						   <img src="/images/ccc.jpg"width="150" height="150">
+						   <a href="http://ccckmit.github.io/home/" style="padding-left:105px;padding-right:4px" title="CCC的教科書">陳鍾誠的教科書</a>
+						</li>
+					
+                  </div>
+
+               </div>
+
+			    <div id="share2" class="block">
+                  
+                  <div class="title">
+                     <span>
+                        <a>好站連結-學習 CSS 版面配置</a>
+                     </span>
+                  </div>
+                  
+                  <div id="share-content" class="db_pd">
+                     <ul class="cl">
+                        <li>
+						   <img src="/images/learnCSS.png""cl">
+						   <a href="http://zh-tw.learnlayout.com/float-layout.html" style="padding-left:145px;padding-right:4px" title="學習CSS">學習 CSS 版面配置</a>    
+						</li>
+						
+                     </ul>
+                     
+                  </div>
+
+               </div>
+
+                <div id="share3" class="block">
+                  
+                  <div class="title">
+                     <span>
+                        <a>好站連結-色表查詢</a>
+                     </span>
+                  </div>
+                  
+                  <div id="share-content" class="db_pd">
+                     <ul class="cl">
+                        <li>
+						  <img src="/images/color.png">
+						  <a href="http://www.colorhexa.com/" style="padding-left:50px;padding-right:4px" title="ColorHexa">色表查詢</a>
+                        </li>
+						
+                     </ul>
+                     	
+                  </div>
+
+               </div>
+
+
+            </div>
+		 </div>
+      </div>
+   </div>	  
+</body>
+</html>
